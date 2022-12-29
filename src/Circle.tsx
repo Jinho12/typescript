@@ -30,8 +30,9 @@ interface CircleProps {
 }
 
 function Circle({ bgColor, borderColor=bgColor, text="Good" }: CircleProps) {
-
-  return <Container bgColor={bgColor} borderColor={borderColor}>{text}</Container>
+  const [value, setValue] = useState<number|string>(1);
+  setValue("23")
+  return <Container bgColor={bgColor} borderColor={borderColor}></Container>
 }
 
 export default Circle;
