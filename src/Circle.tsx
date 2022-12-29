@@ -31,7 +31,7 @@ interface CircleProps {
 
 function Circle({ bgColor, borderColor=bgColor, text="Good" }: CircleProps) {
   const [value, setValue] = useState<number|string>(1);
-  setValue("23")
+
   return <Container bgColor={bgColor} borderColor={borderColor}></Container>
 }
 
